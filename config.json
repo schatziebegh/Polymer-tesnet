@@ -1,27 +1,27 @@
 {
-  "proofsEnabled": false,
+  "proofsEnabled": true,
   "deploy": {
-    "optimism": "XCounterUC",
-    "base": "XCounterUC"
+    "optimism": "XCounter",
+    "base": "XCounter"
   },
-  "isUniversal": true,
+  "isUniversal": false,
   "createChannel": {
     "srcChain": "optimism",
-    "srcAddr": "0x1234567890AbCdEf1234567890aBcDeF12345678",
+    "srcAddr": "0x7C268B97B028581DE9Ba2aE3A5Df96Ab637DCAC0",
     "dstChain": "base",
-    "dstAddr": "0x1234567890AbCdEf1234567890aBcDeF12345678",
+    "dstAddr": "0xEA4E55D1246a365EB811877343176222Cb3846d1",
     "version": "1.0",
     "ordering": 0,
     "fees": false
   },
   "sendPacket": {
     "optimism": {
-      "portAddr": "0x1234567890abcdef1234567890abcdef12345678",
+      "portAddr": "0x7C268B97B028581DE9Ba2aE3A5Df96Ab637DCAC0",
       "channelId": "channel-n",
       "timeout": 36000
     },
     "base": {
-      "portAddr": "0x1234567890abcdef1234567890abcdef12345678",
+      "portAddr": "0xEA4E55D1246a365EB811877343176222Cb3846d1",
       "channelId": "channel-n",
       "timeout": 36000
     }
@@ -29,14 +29,39 @@
   "sendUniversalPacket": {
     "optimism": {
       "portAddr": "0x1234567890abcdef1234567890abcdef12345678",
-      "channelId": "channel-x",
+      "channelId": "channel-16",
       "timeout": 36000
     },
     "base": {
       "portAddr": "0x1234567890abcdef1234567890abcdef12345678",
-      "channelId": "channel-y",
+      "channelId": "channel-17",
       "timeout": 36000
     }
   },
-  "backup": {}
+  "backup": {
+    "sendPacket": {
+      "optimism": {
+        "portAddr": "0x7E5406891565b8D710A33624262B4390C696BD17",
+        "channelId": "channel-n",
+        "timeout": 36000
+      },
+      "base": {
+        "portAddr": "0x9fe3f4011b122963B2cC62EDdc1eee6B855b868b",
+        "channelId": "channel-n",
+        "timeout": 36000
+      }
+    },
+    "sendUniversalPacket": {
+      "optimism": {
+        "portAddr": "0x1234567890abcdef1234567890abcdef12345678",
+        "channelId": "channel-x",
+        "timeout": 36000
+      },
+      "base": {
+        "portAddr": "0x1234567890abcdef1234567890abcdef12345678",
+        "channelId": "channel-y",
+        "timeout": 36000
+      }
+    }
+  }
 }
